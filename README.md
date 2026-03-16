@@ -1,7 +1,7 @@
 # King of the Ether Throne v0.3.0 Verification
 
 **Contract:** [`0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e`](https://etherscan.io/address/0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e)  
-**Deployment tx:** [`0x...`](https://etherscan.io/tx/0x58ec2b2cdc2a6e52e6c37b6c7e3c8e04e5e9e6f7a8b9c0d1e2f3a4b5c6d7e8f9)  
+**Deployment tx:** [`0xe80514f4...`](https://etherscan.io/tx/0xe80514f4ad4a982b1b265b17be766201630a832f9f6c1e2e8a68f67d18009da3)  
 **Block:** 893,433  
 **Date:** January 23, 2016  
 **Deployer:** `0x2f88180369377869a1bc5ae807416f72d736c206` (Kieran Elby)
