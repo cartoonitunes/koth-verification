@@ -1,9 +1,9 @@
-# King of the Ether Throne v0.3.0 Verification
+# King of the Ether Throne v0.3.0 - Bytecode Verification
 
-**Contract:** [`0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e`](https://etherscan.io/address/0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e)  
-**Deployment tx:** [`0xe80514f4...`](https://etherscan.io/tx/0xe80514f4ad4a982b1b265b17be766201630a832f9f6c1e2e8a68f67d18009da3)  
-**Block:** 893,433  
-**Date:** January 23, 2016  
+**Contract:** [`0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e`](https://etherscan.io/address/0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e)
+**Deployment tx:** [`0xe80514f4...`](https://etherscan.io/tx/0xe80514f4ad4a982b1b265b17be766201630a832f9f6c1e2e8a68f67d18009da3)
+**Block:** 893,433
+**Date:** January 23, 2016
 **Deployer:** `0x2f88180369377869a1bc5ae807416f72d736c206` (Kieran Elby)
 
 ## What Is This?
@@ -14,19 +14,25 @@ The contract became notable in the Ethereum community for exposing a subtle but 
 
 This is the original v0.3.0 contract, deployed before the bug was discovered and before the v1.0 rewrite.
 
+## Source
+
+Source code published by the contract author (Kieran Elby) in the [KingOfTheEtherThrone GitHub repository](https://github.com/kieranelby/KingOfTheEtherThrone) at commit [`54041a8`](https://github.com/kieranelby/KingOfTheEtherThrone/commit/54041a837aecb609b0f9f4ca58fb1180500f08e7), tagged as version 0.3.0.
+
+The README at that commit documents the compiler: `solidity 0.2.0-67c855c5 without optimization`.
+
 ## Compiler
 
-- **Compiler:** `soljson-v0.2.0-nightly.2016.1.20+commit.67c855c5`
+- **Compiler:** `soljson-v0.2.0-nightly.2016.1.20+commit.67c855c5` (as documented by the author)
 - **Optimizer:** OFF
 - **Language:** Solidity
 
+Note: `soljson-v0.3.1+commit.c492d9be` also produces an identical bytecode (the two releases generate the same code for this contract).
+
 ## Verification
 
-Source code was published by the contract author (Kieran Elby) in the [KingOfTheEtherThrone GitHub repository](https://github.com/kieranelby/KingOfTheEtherThrone) at commit [`54041a8`](https://github.com/kieranelby/KingOfTheEtherThrone/commit/54041a837aecb609b0f9f4ca58fb1180500f08e7), tagged as version 0.3.0, January 23, 2016.
+Compiling `KingOfTheEtherThrone.sol` with `soljson-v0.2.0-nightly.2016.1.20+commit.67c855c5` (optimizer OFF) produces a **byte-for-byte exact match** of the 3,312-byte creation bytecode and 2,833-byte runtime bytecode. No source modifications required.
 
-The README at that commit explicitly documents the compiler: `solidity 0.2.0-67c855c5 without optimization`.
-
-Compiling `KingOfTheEtherThrone.sol` with `soljson-v0.2.0-nightly.2016.1.20+commit.67c855c5` (optimizer OFF) produces a **byte-for-byte exact match** of the 2,833-byte on-chain runtime bytecode. No source modifications required.
+Also verified on Sourcify (match ID 27405941) at https://sourcify.dev/#/lookup/0xa9d160e32ad37ac6f2b8231e4efe14d35abb576e
 
 ## Files
 
